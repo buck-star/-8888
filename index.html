@@ -647,6 +647,25 @@
                 padding: 20px 15px 40px 15px;
             }
 
+            /* 移动端：大图放在导航栏下面，文字在图片下方 */
+            .hero-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-image {
+                order: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hero-content {
+                order: 1;
+                width: 100%;
+            }
+
             .hero-content {
                 margin-top: 20px;
             }
