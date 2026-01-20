@@ -607,42 +607,158 @@
         @media (max-width: 1024px) {
             .hero-container {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 30px;
             }
 
             .hero-subtitle {
                 font-size: 28px;
             }
 
+            .hero-image {
+                padding: 20px;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         @media (max-width: 768px) {
+            .header {
+                padding: 0 12px;
+            }
+
+            .nav-container {
+                padding: 8px 12px;
+                min-height: 56px;
+            }
+
+            .logo img {
+                max-height: 40px !important;
+            }
+
             .hero-section {
-                padding: 40px 20px;
+                padding: 20px 15px 40px 15px;
+            }
+
+            .hero-content {
+                margin-top: 20px;
             }
 
             .hero-content h1 {
-                font-size: 32px;
+                font-size: 36px;
+                margin-bottom: 10px;
             }
 
             .hero-subtitle {
-                font-size: 21px;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .status-badge {
+                font-size: 12px;
+                padding: 6px 12px;
+                margin-bottom: 12px;
             }
 
             .countdown {
                 flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+
+            .countdown-item {
+                padding: 10px 16px;
             }
 
             .countdown-number {
                 font-size: 24px;
             }
 
+            .countdown-separator {
+                font-size: 20px;
+            }
+
+            .activity-time {
+                font-size: 12px;
+                margin-bottom: 16px;
+            }
+
+            .prize-pool {
+                margin-bottom: 16px;
+            }
+
+            .prize-pool-label {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+
+            .prize-pool-display {
+                padding: 6px 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .prize-pool-text {
+                font-size: 11px;
+            }
+
+            .prize-pool-percent {
+                font-size: 14px;
+            }
+
+            .btn-primary {
+                padding: 12px 30px;
+                font-size: 16px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+            }
+
+            .action-icon {
+                width: 44px;
+                height: 44px;
+            }
+
+            .invite-code-hint {
+                font-size: 12px;
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+
+            .invite-code-display {
+                padding: 5px 10px;
+            }
+
+            .invite-code-value {
+                font-size: 13px;
+            }
+
+            .claimed-count {
+                font-size: 12px;
+                margin-top: 12px;
+            }
+
+            .claimed-count-number {
+                font-size: 14px;
+            }
+
             .activity-card {
-                padding: 24px;
+                padding: 20px;
             }
 
             .card-title {
                 font-size: 20px;
+            }
+
+            .card-content {
+                font-size: 14px;
             }
 
             .card-button {
@@ -650,8 +766,22 @@
                 width: 100%;
                 justify-content: center;
                 margin-top: 16px;
+                padding: 12px 24px;
             }
 
+            .footer-rules {
+                padding: 40px 15px;
+            }
+
+            .rules-title {
+                font-size: 22px;
+                margin-bottom: 24px;
+            }
+
+            .rules-list {
+                font-size: 13px;
+                padding-left: 20px;
+            }
 
             .floating-actions {
                 right: 16px;
@@ -663,23 +793,158 @@
                 min-height: 40px;
                 font-size: 16px;
             }
+
+            .hero-image {
+                padding: 15px;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         @media (max-width: 480px) {
+            .header {
+                padding: 0 10px;
+            }
+
+            .nav-container {
+                padding: 6px 10px;
+                min-height: 48px;
+            }
+
+            .hero-section {
+                padding: 15px 12px 30px 12px;
+            }
+
+            .hero-content {
+                margin-top: 15px;
+            }
+
+            .hero-content h1 {
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+
             .hero-subtitle {
                 font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .status-badge {
+                font-size: 11px;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+            }
+
+            .countdown {
+                gap: 6px;
+                margin-bottom: 10px;
             }
 
             .countdown-item {
-                padding: 12px 16px;
+                padding: 8px 12px;
+                min-width: 50px;
             }
 
             .countdown-number {
-                font-size: 20px;
+                font-size: 18px;
             }
 
             .countdown-separator {
+                font-size: 16px;
+            }
+
+            .activity-time {
+                font-size: 11px;
+                margin-bottom: 12px;
+            }
+
+            .prize-pool-display {
+                padding: 5px 15px;
+            }
+
+            .prize-pool-text {
+                font-size: 10px;
+            }
+
+            .prize-pool-percent {
+                font-size: 12px;
+            }
+
+            .btn-primary {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .action-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .invite-code-hint {
+                font-size: 11px;
+            }
+
+            .invite-code-value {
+                font-size: 12px;
+            }
+
+            .claimed-count {
+                font-size: 11px;
+            }
+
+            .claimed-count-number {
+                font-size: 13px;
+            }
+
+            .activity-card {
+                padding: 16px;
+            }
+
+            .card-title {
+                font-size: 18px;
+            }
+
+            .card-content {
+                font-size: 13px;
+            }
+
+            .card-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .footer-rules {
+                padding: 30px 12px;
+            }
+
+            .rules-title {
                 font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .rules-list {
+                font-size: 12px;
+                padding-left: 18px;
+            }
+
+            .hero-image {
+                padding: 10px;
+            }
+
+            .hero-image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .nav-container {
+                padding: 8px 12px;
+            }
+
+            .logo img {
+                max-height: 36px !important;
             }
         }
     </style>
@@ -723,7 +988,7 @@
                     </div>
                 </div>
                 <div class="activity-time" id="activity-time">
-                    活动时间：2026/01/05 00:00:00 - 2026/01/20 23:59:59
+                    活动时间：2026/01/10 00:00:00 - 2026/02/10 23:59:59
                 </div>
                 <div class="prize-pool">
                     <div class="prize-pool-label">奖池剩余:</div>
@@ -737,9 +1002,9 @@
                     </div>
                 </div>
                 <div class="hero-actions">
-                    <a href="https://www.8888.com/register" class="btn-primary" target="_blank">立即抢占888U名额</a>
+                    <a href="https://download.8888.com?ref=EXI3KZ&forward_url=1&page=1" class="btn-primary" target="_blank">立即抢占888U名额</a>
                     <a href="#activity-rules" class="action-icon"><img src="Chart.svg" alt="订单图标"></a>
-                    <a href="https://www.8888.com/register" class="action-icon" target="_blank"><img src="Share.svg" alt="分享图标"></a>
+                    <a href="https://download.8888.com?ref=EXI3KZ&forward_url=1&page=1"" class="action-icon" target="_blank"><img src="Share.svg" alt="分享图标"></a>
                 </div>
                 <div class="claimed-count">
                     <span class="claimed-count-icon"></span>
@@ -762,7 +1027,7 @@
                 100% 全额返（最高可返30 U）
             </p>
             <!-- 充值链接：请在此处修改跳转地址 -->
-            <a href="https://www.8888.com" class="card-button" target="_blank">
+            <a href="https://download.8888.com?ref=EXI3KZ&forward_url=1&page=1"" class="card-button" target="_blank">
                 去充值 <img src="Line.svg" alt="箭头图标">
             </a>
             <div style="clear: both;"></div>
@@ -774,7 +1039,7 @@
             <p class="card-content">
                 累计消费＞3笔，且累计金额＞88 U，奖励：58 USDT
             </p>   <!-- 充值链接：请在此处修改跳转地址 -->
-            <a href="https://www.8888.com" class="card-button" target="_blank">
+            <a href="https://download.8888.com?ref=EXI3KZ&forward_url=1&page=1"" class="card-button" target="_blank">
                 去交易 <img src="Line.svg" alt="箭头图标">
             </a>
             <div style="clear: both;"></div>
@@ -786,7 +1051,7 @@
             <p class="card-content">
                 累计消费＞5笔，且累计金额＞10,000 U，奖励：888 USDT
             </p>   <!-- 充值链接：请在此处修改跳转地址 -->
-            <a href="https://www.8888.com" class="card-button" target="_blank">
+            <a href="https://download.8888.com?ref=EXI3KZ&forward_url=1&page=1"" class="card-button" target="_blank">
                 去交易 <img src="Line.svg" alt="箭头图标">
             </a>
            
@@ -1002,20 +1267,28 @@
                 });
             })();
             
-            // 让奖池剩余显示区域与按钮宽度对齐
+            // 让奖池剩余显示区域与按钮宽度对齐（仅在桌面端）
             function alignPrizePoolWidth() {
                 const btnPrimary = document.querySelector('.btn-primary');
                 const prizePoolDisplay = document.querySelector('.prize-pool-display');
                 
                 if (btnPrimary && prizePoolDisplay) {
-                    // 确保按钮已经渲染完成
-                    const btnWidth = btnPrimary.offsetWidth;
+                    // 检查是否为移动端（宽度小于768px）
+                    const isMobile = window.innerWidth <= 768;
                     
-                    if (btnWidth > 0) {
-                        // 设置奖池剩余显示区域为相同宽度（精确匹配）
-                        prizePoolDisplay.style.width = btnWidth + 'px';
-                        prizePoolDisplay.style.minWidth = btnWidth + 'px';
-                        prizePoolDisplay.style.maxWidth = btnWidth + 'px';
+                    if (isMobile) {
+                        // 移动端：移除固定宽度，使用CSS的100%宽度
+                        prizePoolDisplay.style.width = '';
+                        prizePoolDisplay.style.minWidth = '';
+                        prizePoolDisplay.style.maxWidth = '';
+                    } else {
+                        // 桌面端：对齐按钮宽度
+                        const btnWidth = btnPrimary.offsetWidth;
+                        if (btnWidth > 0) {
+                            prizePoolDisplay.style.width = btnWidth + 'px';
+                            prizePoolDisplay.style.minWidth = btnWidth + 'px';
+                            prizePoolDisplay.style.maxWidth = btnWidth + 'px';
+                        }
                     }
                 }
             }
