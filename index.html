@@ -802,6 +802,23 @@
                 font-size: 14px;
             }
 
+            /* 移动端：顶部大图样式，参照截图效果 */
+            .hero-image {
+                border: none;
+                background: transparent;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .hero-image img {
+                width: 70% !important;
+                max-width: 280px !important;
+                height: auto !important;
+                object-fit: contain !important;
+                margin: 0 auto;
+                display: block;
+            }
+
             .activity-card {
                 padding: 20px;
             }
@@ -936,17 +953,18 @@
                 height: 40px;
             }
 
-            .prize-pool-order-icon {
-                width: 40px;
-                height: 40px;
-            }
-
             .invite-code-hint {
                 font-size: 11px;
             }
 
             .invite-code-value {
                 font-size: 12px;
+            }
+
+            /* 更小屏下再略微缩小图片，保持与示例相似比例 */
+            .hero-image img {
+                width: 65% !important;
+                max-width: 240px !important;
             }
 
             .claimed-count {
