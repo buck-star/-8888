@@ -722,8 +722,9 @@
 
             .prize-pool-display {
                 padding: 4px 18px;  /* 适当缩小进度条高度和内边距 */
-                width: 100%;
-                max-width: 100%;
+                width: auto;              /* 不再占满整行 */
+                max-width: 72%;           /* 再缩短一些长度 */
+                margin: 0 auto;           /* 水平居中 */
             }
 
             .prize-pool-text {
@@ -782,8 +783,11 @@
             .btn-primary {
                 padding: 12px 30px;
                 font-size: 16px;
-                flex: 1;
+                width: 72%;          /* 与进度条同一宽度 */
+                max-width: 72%;
+                margin: 0 auto;
                 text-align: center;
+                display: block;
             }
 
             .hero-actions {
@@ -792,6 +796,7 @@
                 gap: 12px;
                 width: 100%;
                 align-items: center;
+                justify-content: center;
             }
 
             .action-icon {
