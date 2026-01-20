@@ -752,14 +752,13 @@
                 flex: 1;
             }
 
+            /* 移动端不显示进度条右侧订单图标（HTML 已注释，这里再次兜底隐藏） */
             .prize-pool-order-icon {
-                display: inline-flex;
-                width: 44px;
-                height: 44px;
-                flex-shrink: 0;
+                display: none;
             }
 
-            /* 移动端隐藏hero-actions里的分享图标，只保留订单图标 */
+            /* 移动端隐藏 hero-actions 里的订单图标和分享图标，只保留按钮 */
+            .hero-actions .action-icon-order,
             .hero-actions .action-icon-share {
                 display: none;
             }
