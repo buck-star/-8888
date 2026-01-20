@@ -720,6 +720,7 @@
                 align-items: center;
                 gap: 12px;
                 margin-bottom: 16px;
+                position: relative;
             }
 
             .prize-pool-label {
@@ -738,16 +739,16 @@
             .hero-actions .action-icon-order {
                 position: absolute;
                 right: 0;
-                top: -52px; /* 向上移动到prize-pool那一行，与prize-pool-display对齐 */
+                top: -52px; /* 向上移动到prize-pool那一行 */
                 width: 44px;
                 height: 44px;
                 z-index: 10;
             }
 
-            /* 在prize-pool里为订单图标预留空间，让它们在同一行 */
+            /* 在prize-pool里为订单图标预留空间，但不改变进度条 */
             .prize-pool {
-                margin-bottom: 52px; /* 为订单图标预留空间 */
-                padding-right: 56px; /* 为订单图标预留右侧空间（44px + 12px gap） */
+                padding-right: 0; /* 不添加padding，保持进度条原样 */
+                margin-bottom: 52px; /* 为订单图标预留空间，避免重叠 */
             }
 
             .btn-primary {
