@@ -730,32 +730,24 @@
                 flex: 1;
             }
 
-            /* 移动端显示prize-pool里的订单图标 */
-            .prize-pool-order-icon {
-                display: inline-flex;
+            /* 移动端：将hero-actions里的订单图标移到prize-pool那一行 */
+            .hero-actions {
+                position: relative;
+            }
+
+            .hero-actions .action-icon-order {
+                position: absolute;
+                right: 0;
+                top: -52px; /* 向上移动到prize-pool那一行，与prize-pool-display对齐 */
                 width: 44px;
                 height: 44px;
-                align-items: center;
-                justify-content: center;
-                background-color: #000000;
-                border-radius: 50%;
-                padding: 10px;
-                border: 1px solid #333333;
-                box-sizing: border-box;
-                flex-shrink: 0;
+                z-index: 10;
             }
 
-            /* 移动端隐藏hero-actions里的订单图标 */
-            .hero-actions .action-icon-order {
-                display: none;
-            }
-
-            .prize-pool-order-icon img {
-                width: 24px !important;
-                height: 24px !important;
-                max-width: 24px !important;
-                max-height: 24px !important;
-                object-fit: contain !important;
+            /* 在prize-pool里为订单图标预留空间，让它们在同一行 */
+            .prize-pool {
+                margin-bottom: 52px; /* 为订单图标预留空间 */
+                padding-right: 56px; /* 为订单图标预留右侧空间（44px + 12px gap） */
             }
 
             .btn-primary {
@@ -936,9 +928,14 @@
                 height: 40px;
             }
 
-            .prize-pool-order-icon {
+            .hero-actions .action-icon-order {
+                top: -48px;
                 width: 40px;
                 height: 40px;
+            }
+
+            .prize-pool {
+                margin-bottom: 48px;
             }
 
             .invite-code-hint {
