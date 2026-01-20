@@ -731,7 +731,7 @@
                 flex: 1;
             }
 
-            /* 移动端：将hero-actions里的订单图标移到prize-pool那一行 */
+            /* 移动端：将hero-actions里的订单图标移到prize-pool那一行，并做高亮样式 */
             .hero-actions {
                 position: relative;
             }
@@ -739,9 +739,15 @@
             .hero-actions .action-icon-order {
                 position: absolute;
                 right: 0;
-                top: -52px; /* 向上移动到prize-pool那一行 */
-                width: 44px;
-                height: 44px;
+                top: -52px; /* 与进度条垂直对齐 */
+                width: 48px;
+                height: 48px;
+                min-width: 48px;
+                min-height: 48px;
+                border-radius: 50%;
+                background: radial-gradient(circle, #FFE9A3 0%, #FF9A2A 40%, #D45200 75%, rgba(0, 0, 0, 0.9) 100%);
+                border: 1px solid #FDD46A;
+                box-shadow: 0 0 14px rgba(255, 153, 0, 0.9), 0 0 26px rgba(255, 102, 0, 0.7);
                 z-index: 10;
             }
 
